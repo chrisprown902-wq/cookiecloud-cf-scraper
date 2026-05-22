@@ -1,0 +1,24 @@
+{
+  "name": "cookiecloud-cf-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CookieCloud + Cloudflare Browser Run 通用网页抓取基础设施",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "scrape": "npx tsx scripts/scrape.ts",
+    "scrape:local": "npx tsx scripts/scrape.ts --local"
+  },
+  "dependencies": {
+    "@cloudflare/puppeteer": "^1.1.0",
+    "cloakbrowser": "^0.3.30",
+    "playwright-core": "^1.60.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260521.1",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^4.0.0"
+  }
+}
